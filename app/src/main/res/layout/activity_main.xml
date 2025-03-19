@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/phoneNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入电话号码"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/batteryLevelTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="当前电量："
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/smsStatusTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="短信发送状态："
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/startButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="开始"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
